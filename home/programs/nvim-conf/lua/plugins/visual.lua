@@ -10,6 +10,14 @@ return {
 			"MunifTanjim/nui.nvim",
 			--{ "3rd/image.nvim", opts = {} }, -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
+		opts = {
+
+			filesystem = {
+				filtered_items = {
+					visible = true,
+				},
+			},
+		},
 	},
 	{
 		"catppuccin/nvim",
@@ -46,9 +54,9 @@ return {
 		lazy = false,
 		--- @class snacks.Config
 		opts = {
-			dim = {
+			--[[dim = {
 				animate = { enabled = true },
-			},
+			},]]
 		},
 	},
 

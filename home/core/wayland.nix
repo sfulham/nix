@@ -30,6 +30,7 @@
       monitor = [
         "eDP-1,highres,0x0,1.25,vrr,1,bitdepth,10"
         "DP-1,highres,0x-1082,auto"
+        "HDMI-A-1,highres,0x-1082,auto"
       ];
       env = [
         "QT_QPA_PLATFORM,wayland"
@@ -41,6 +42,8 @@
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
+        "_JAVA_AWT_WM_NONREPARENTING,1"
+        "_JAVA_OPTIONS,-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true"
       ];
       "$mod" = "SUPER";
       bind = [

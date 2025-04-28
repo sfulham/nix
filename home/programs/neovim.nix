@@ -37,6 +37,7 @@
     bat
     # Diff engine for code actions
     delta
+    ripgrep
   ];
   catppuccin.nvim.enable = false;
   programs.neovim = {

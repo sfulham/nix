@@ -43,9 +43,9 @@
       widgets = [
         #"title"
         #"dnd"
-        #"menubar#desktop"
+        "menubar#desktop"
         #"volume"
-        #"mpris"
+        "mpris"
         "notifications"
       ];
       widget-config = {

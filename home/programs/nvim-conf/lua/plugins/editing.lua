@@ -8,6 +8,9 @@ end
 
 return {
 	{
+		"puremourning/vimspector",
+	},
+	{
 		"echasnovski/mini.pairs",
 		version = false,
 		config = true,
@@ -69,12 +72,16 @@ return {
 			simple = {
 				"dafny", "jsonls", "lua_ls", "elixirls", "elmls", "nil_ls",
         "rust_analyzer", "gleam", "gopls", "pylsp", "pyright", "pylyzer",
-        "ts_ls", "clangd", "cssls", "html", "svelte", "tinymist", "templ",
+        "ts_ls", "clangd", "cssls", "html", "svelte", "templ",
         "vhdl_ls", "hls", "jdtls"
 			},
 
 			--- @module 'lspconfig.configs'
 			servers = {
+				tinymist = {
+					formatterMode = "typstyle",
+					exportPdf = "onType",
+				},
 				ltex = {
           -- stylua: ignore
 					filetypes = {

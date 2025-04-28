@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 vim.o.smartindent = true
 vim.o.smarttab = true
 vim.o.expandtab = true
-vim.o.shiftwidth = 2
+vim.o.shiftwidth = 4
 vim.o.tabstop = 2
 
 vim.o.timeout = true
@@ -29,4 +29,6 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 require("lazy").setup("plugins")
-Snacks.dim.enable()
+--Snacks.dim.enable()
+vim.g.vimspector_enable_mappings = "HUMAN"
+vim.diagnostic.config({ virtual_text = true })

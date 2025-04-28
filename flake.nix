@@ -9,10 +9,10 @@
 
     catppuccin.url = "github:catppuccin/nix";
     textfox.url = "github:adriankarlen/textfox";
-    _1password-shell-plugins.url = "github:1Password/shell-plugins";
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     hyprpanel.url = "github:Jas-SinghFSU/HyprPanel";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    nixcord.url = "github:kaylorben/nixcord";
   };
 
   outputs =

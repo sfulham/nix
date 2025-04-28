@@ -6,7 +6,7 @@
     ./jetbrains.nix
     ./neovim.nix
     ./ghostty.nix
-    ./vesktop.nix
+    # ./vesktop.nix
     ./vscode.nix
   ];
 }

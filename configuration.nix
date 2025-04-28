@@ -19,6 +19,10 @@
     ./home/programs/_1password.nix
     ./home/programs/steam.nix
   ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Bootloader.
   #boot.loader.systemd-boot.enable = true;
@@ -89,13 +93,17 @@
   catppuccin.flavor = "mocha";
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  services.tailscale.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     #  wget
+    openocd
   ];
 
+  services.udev.packages = with pkgs; [ openocd ];
+  services.fwupd.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
