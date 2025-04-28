@@ -40,7 +40,7 @@
       "nix-reload" = "sudo nixos-rebuild switch --flake ~/.config/nix#charlis-laptop";
       "cd" = "z";
     };
-    initExtra = ''
+    initContent = ''
       # This function is called whenever a command is not found.
       #  command_not_found_handler() {
       #    local p=${pkgs.comma}/bin/comma
